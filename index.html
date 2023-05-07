@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto</title>
+    <title>Desafío La Regina</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/776662cbe8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <img class="logobd" src="./imagenes/logo.svg" alt="logo">
+            <img class="logo" src="./imagenes/logo.png" alt="logo">
             <input id="burguer" type="checkbox" class="checkburguer">
                 <label for="burguer" class="label_burguer"> 
                         <span class="barra hamb1"></span>
@@ -20,127 +21,98 @@
                 </label>    
             <div class="menuhamb">
                 <ul>
-                    <li><a href="#episodios">EPISODIOS</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
-                    <li><a href="#topicos">TÓPICOS</a></li>
-                </ul>
-            </div>
-            <div class="menudesk">
-                <ul>
-                    <li><a href="#episodios">EPISODIOS</a></li>
-                    <li><a href="#nosotros">NOSOTROS</a></li>
-                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
-                    <li><a href="#topicos">TÓPICOS</a></li>
+                    <li><a href="#imagenes">IMAGENES</a></li>
+                    <li><a href="#ubicacion">UBICACIÓN</a></li>
+                    <li><a href="#cronograma">CRONOGRAMA</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="presentacion">
-            <h1 class="h1-presentacion">Hellow <del>world</del> pale blue dot.</h1>
-            <p class="p-mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <p class="p-desktop">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-            <div class="button but1">
+            <h1 class="h1-presentacion">#DesafíoLaRegina</h1>
+            <p class="p-presentacion">Te invitamos a formar parte de esta familia de pescadores.<br> ¡Vení a compartir un fin de semana a pura pesca en el punto estratégico más importante de todo el alto Paraná!<br> 
+            ¡¡Súmate al nuevo #DesafíoLaRegina!!</p>
+            <div id="moreinfo" class="more-info">
+                <p>21 - 22 - 23 y 24 de Julio.
+                    <br>
+                    Participaran importantes marcas exponiendo lo último de sus novedades, charlas instructivas, torneos de presición con regalos y premios de primer nivel... con la cobertura exclusiva de NATURALTUBE.
+                    <br>
+                    El paquete cuenta con dos días de pesca, alojamiento, gastronomía y bebidas incluidas durante todo el evento.
+                    <br>
+                </p>
+            </div>
+            <div id="butmore" class="button butmore">
                 CONOCÉ MÁS
             </div>
-        </section>
-        <section class="episodios">
-            <h1 id="episodios" class="h1-episodios">Episodios</h1>
-            <div class="spotify-seccion">
-                <div class="iframe-container first">
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
-                </div>
-                <div class="iframe-container second">    
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
-                    <iframe src="https://open.spotify.com/embed-podcast/episode/2Mc3IjcnDOTmD6KioJTseR" allow="encrypted-media"></iframe>
-                </div>
+            <div id="butless" class="button butless">
+                CERRAR
             </div>
         </section>
-        <section class="phone">
-            <div class="phone-container">
-                <img class="phone-img" src="./imagenes/phone.png" alt="phone">
-                <div class="phone-text"> 
-                    <h1 id="nosotros" class="h1-phone">De dónde venimos</h1>
-                    <p class="p-phone">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are chellenged by this point of pale light.
+        <section class="galeria" id="SliderGalery">
+            <h1 id="imagenes" class="h1-galeria">Imagenes</h1>
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('./imagenes/Imagen 1.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 2.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 3.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 4.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 5.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 6.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 7.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 8.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 9.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 10.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 11.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 12.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 13.jpeg');"></div>
+                <div class="slide" style="background-image: url('./imagenes/Imagen 14.jpeg');"></div>
+                <button class="arrow left-arrow" id="left">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="arrow right-arrow" id="right">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+        <section class="ubicacion">
+            <div class="ubicacion-container">
+                <div class="ubicacion-text"> 
+                    <h1 id="ubicacion" class="h1-phone">Ubicación</h1>
+                    <p class="p-ubicacion">Situado en el corazón del Alto Paraná La Regina Lodge nos recibe para ofrecernos todas sus comodidades y servicios premium para hacer de esta experiencia de pesca un viaje inolvidable.
                     </p>
-                    <p class="p-phone">Our planet is a lonely speck in the great evenloping cosmicdark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.    
+                    <p class="p-ubicacion"> - Habitaciones amplias equipadas con Wi-Fi, TV LED, Split frío-calor, heladeras, somier, ropa de cama, baños privados, toallas, shampoo-acondicionador, jabón de tocador.<br> - Comedor con Cheff Propio y variadas propuestas gastronómicas. <br> - Bajada de lancha exclusiva a minutos de los puntos de pesca estratégicos más importantes del Alto Paraná, donde podrás tenerla oportunidad de llevarte el trofeo de tu vida.   
                     </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3544.953704614972!2d-57.89664953542812!3d-27.314637431234203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945a918bf1811fff%3A0x650580bc49e46d51!2sLa%20Regina%20Lodge%20%26%20Aprt%20Hotel!5e0!3m2!1ses-419!2sar!4v1680377063278!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>   
             </div>
         </section>
-        <section class="galeria">
-            <h1 id="entrevistas" class="h1-galeria">Invitadas/os estelares</h1>
-            <div class="galeria-container">                
-                <div class="galeria-container subgaleria">
-                    <img class="img-galeria" src="./imagenes/grace-hopper.png" alt="grace-hopper">
-                    <img class="img-galeria" src="./imagenes/Katie-Bouman.png" alt="Katie-Bouman">
-                    <img class="img-galeria" src="./imagenes/Margaret_Hamilton.png" alt="Margaret_Hamilton">
-                </div>
-                <div class="galeria-container subgaleria">
-                    <img class="img-galeria" src="./imagenes/An-E.R.A.Univac-1103-computer-in-the-1950s.png" alt="An-E.R.A.">
-                    <img class="img-galeria" src="./imagenes/Computer-operators-with-an-Eniac—the-world’s-first-programmable-general-purpose-computer.png" alt="Computer-operators">
-                    <img class="img-galeria" src="./imagenes/susan-kare.png" alt="susan-kare">
-                </div>
-            </div>
-        </section>
-        <section class="temas">
-            <h1 id="topicos" class="h1-temas">Algunos de nuestros temas</h1>
-            <div class="tema-container">
-                <div class="tema-container subtema">
-                    <img class="icono" src="./imagenes/icon1.svg" alt="trabajoremoto">
-                    <h3>Trabajo remoto</h3>
-                </div>
-                <div class="tema-container subtema">
-                    <img class="icono" src="imagenes/icon2.svg" alt="repensandoprog">
-                    <h3>Repensando la programación</h3>
-                </div>
-                <div class="tema-container subtema">
-                    <img class="icono" src="./imagenes/icon3.svg" alt="basescod">
-                    <h3>Bases del código</h3>
-                </div>
-                <div class="tema-container subtema">
-                    <img class="icono" src="./imagenes/icon4.svg" alt="seguridadinfo">
-                    <h3>Seguridad informática</h3>
-                </div>
-            </div>
-        </section>
-        <section class="ultimas-nov">
-            <h1 class="h1-ultimas-nov">
-                ¿Querés las últimas novedades?
+        <section class="cronograma">
+            <h1 id="cronograma" class="h1-cronograma">
+                Cronograma
             </h1>
-            <div class="button but2">
-                ESCUCHÁ LOS EPISODIOS
-            </div>
+            <ul class="cronograma-list">
+                <li>VIERNES 21 </li>
+                <p class="day">14:00 hs Checkin  - 19:00 hs charlas peces marcados, armado de equipos, técnicas de pesca</p>
+                <li>SÁBADO 22</li>
+                <p class="day">6:00 hs desayuno en el hotel y pesca durante toda la mañana - 12:00 hs almuerzo en el hotel, con opción de viandas para los que decidan continuar pescando - 20:00 hs torneo de presición, entrega de regalos y premios - 21:00 hs cena</p>
+                <li>DOMINGO 23</li>
+                <p class="day">6:00 hs desayuno en el hotel y pesca durante toda la mañana - 12:00 hs almuerzo en el hotel, con opción de viandas para los que decidan continuar pescando - 21:00 hs cena despedida con entrega de material fotográfico y reproducción durante la misma</p>
+                <li>LUNES 24</li>
+                <p class="day"9>6:30 a 9:00 hs desayuno y check out</p>
+            </ul>
         </section>
     </main>
     <footer>
-        <p class="p-footer">@ 2019- Hello blue pale dot</p>
+        <p class="p-footer">@desafioparana</p>
         <div class="icono-container">
-            <a href="https://www.spotify.com/ar/" target="_blank">
-                <span class="icono-footer">
-                    <i class="fab fa-spotify"></i>
-                </span>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://instagram.com/desafioparana?igshid=YmMyMTA2M2Y=" target="_blank">
                 <span class="icono-footer">
                     <i class="fab fa-instagram"></i>
                 </span>
             </a>
-            <a href="https://twitter.com/" target="_blank">
+            <a href="https://wa.link/jdgpao" target="_blank">
                 <span class="icono-footer">
-                    <i class="fab fa-twitter"></i>
-                </span>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <span class="icono-footer">
-                    <i class="fab fa-facebook"></i>
-                </span>
-            </a>
-            <a href="https://web.telegram.org/" target="_blank">
-                <span class="icono-footer">
-                    <i class="fab fa-telegram"></i>
+                    <i class="fab fa-whatsapp"></i>
                 </span>
             </a>
         </div>
